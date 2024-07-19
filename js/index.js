@@ -1,7 +1,7 @@
 // let conter=0
 
 async function getdata() {
-    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
+    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
     let data = await api.json()
     // console.log(data);
     return data.customers
@@ -11,7 +11,7 @@ async function getdata() {
 
 async function display(data) {
 
-    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
+    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
     let datas = await api.json()
     let data2= datas.transactions
 
@@ -86,12 +86,12 @@ async function display(data) {
 
 async function search(inputValue) {
 
-    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
+    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
     let datas = await api.json()
     let data2= datas.transactions
     // let data2 = await api.json()
 
-    let apio = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
+    let apio = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
     let datass = await apio.json()
     let data= datass.customers
 
@@ -172,12 +172,12 @@ async function search(inputValue) {
 async function charts(index) {
 
 
-    let api2 = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
-    let datass = await api.json()
+    let api2 = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
+    let datass = await api2.json()
     let data= datass.customers
 
 
-    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions")
+    let api = await fetch("https://my-json-server.typicode.com/Ahmedtarekseleem/route-transactions/db")
     let datas = await api.json()
     let data2= datas.transactions
 
